@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 ///////////// new data is committed to the DB
                 //Toast.makeText(getBaseContext(), "Firebase updated", Toast.LENGTH_SHORT).show();
+                
+                //Log.d("======", FirebaseInstanceId.getInstance().getToken()); -- ID
+                
                 StringBuilder sb = new StringBuilder();
                 for(DataSnapshot snapShot : dataSnapshot.getChildren()) {
                     Message message = snapShot.getValue(Message.class);
