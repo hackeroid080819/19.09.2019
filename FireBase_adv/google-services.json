@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236715004480",
+    "firebase_url": "https://chatroom-5e5b1.firebaseio.com",
+    "project_id": "chatroom-5e5b1",
+    "storage_bucket": "chatroom-5e5b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236715004480:android:16b46150924c2807c3c5a5",
+        "android_client_info": {
+          "package_name": "com.example.itaykan.myfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236715004480-9sffcbsf0e6llqs9ec4cfn45494tfok8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6mmPNN2t23A5jVRrZxjuuArQklwOvA2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236715004480-9sffcbsf0e6llqs9ec4cfn45494tfok8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
