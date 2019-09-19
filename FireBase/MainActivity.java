@@ -28,7 +28,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 ///////////// new data is committed to the DB
-                Toast.makeText(getBaseContext(), "Firebase updated", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getBaseContext(), "Firebase updated", Toast.LENGTH_SHORT).show();
+                StringBuilder sb = new StringBuilder();
+                for(DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                    Message message = snapShot.getValue(Message.class);
+                    sb.append(message.sender + " : " + message.text + "\n");
+                }
+                Toast.makeText(getBaseContext(),sb, Toast.LENGTH_SHORT).show();
             }
 
             @Override
